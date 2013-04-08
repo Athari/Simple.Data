@@ -200,6 +200,7 @@
     <None Include="app.config" />
     <Compile Include="SimpleRecord.Dictionary2.cs" />
   </ItemGroup>
+  <Import Project="$(SolutionDir)\Build\Common.targets" Condition="Exists('$(SolutionDir)\Build\Common.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
